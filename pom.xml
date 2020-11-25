@@ -75,7 +75,7 @@
         <module>qmq-dist</module>
         <module>qmq-watchdog</module>
         <module>qmq-gateway</module>
-<!--        <module>qmq-demo</module>-->
+        <module>qmq-demo</module>
     </modules>
 
     <properties>
@@ -344,6 +344,13 @@
                 <version>${powermock.version}</version>
                 <scope>test</scope>
             </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>qmq</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
